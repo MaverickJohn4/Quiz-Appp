@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Quiz App</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .quiz-container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        label[for="Luffy"] {
+            color: red;
+        }
+        label[for="Ichigo"],
+        label[for="Goku"],
+        label[for="Naruto"] {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Static Quiz App</h1>
+        <p>Project name: quiz-app</p>
+
+        <h2>Who is The Weakest?</h2>
+
+        <form>
+            <input type="radio" id="Ichigo" name="Weakest" value="Ichigo">
+            <label for="Ichigo">Ichigo</label><br>
+
+            <input type="radio" id="Goku" name="Weakest" value="Goku">
+            <label for="Goku">Goku</label><br>
+
+            <input type="radio" id="Luffy" name="Weakest" value="Luffy">
+            <label for="Luffy">Luffy</label><br>
+
+            <input type="radio" id="Naruto" name="Weakest" value="Naruto">
+            <label for="Naruto">Naruto</label><br><br>
+    </div>
+</body>
+</html>
